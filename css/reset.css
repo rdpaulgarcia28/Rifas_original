@@ -1,0 +1,175 @@
+
+
+
+
+@font-face {
+  font-family: MontserratAlternates-Bold;
+  src: url(../assents/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf);
+  font-family: OpenSans_SemiCondensed-Light;
+  src: url(../assents/fonts/Open_Sans/static/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Light.ttf);
+  font-family: RobotoCondensed-Regular;
+  src: url(../assents/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*===================== VARIABLES ======================*/
+*:root{
+  --color-backGround: #ffffff;
+  --color-degradado:linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);
+  --Tipografia-botones: 'RobotoCondensed-Regular';
+  --Tipografia-textos: 'OpenSans_SemiCondensed-Light';
+  --Tipografia-titulos: 'MontserratAlternates-Bold';
+  --Tipografia-span: 'Playfair Display', serif;;
+}
+
+html{
+  box-sizing: border-box; 
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /*background: #8E2DE2;*/
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+@media(min-width:1440px){
+  html{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+*,*::before,::after{
+  box-sizing: inherit;
+}
+body{
+  width: inherit;
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  width: 4px;
+  background-color:rgba(0, 0, 0, 0.953);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 9);
+  border-radius: 3px;
+}
+section{
+  margin: 0;
+}
+menu{
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-family: var(--Tipografia-botones);
+  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p{
+  margin: 0;
+  font-size: 18px;
+  font-family: var(--Tipografia-textos);
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1{
+  font-family: var(--Tipografia-titulos);
+  font-size: 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+h2, h3, h4, h5{
+  font-weight: 700;
+  margin: 0;
+  font-family: var(--Tipografia-titulos);
+  text-transform: capitalize;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  font-family: var(--Tipografia-botones);
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img{
+  border-style: none;
+  display: block;
+}
+span{
+  font-size: 16px;
+  font-family: var(--Tipografia-span);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*=============================== EFECTOS ==================================*/
+
+.sombra{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+/*=============================== EFECTOS ==================================*/
+
+.fade-in{
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.moveToRight-fadeIn{
+  position: relative;
+  animation: ToRight-fadeIn 5s;
+}
+
+@keyframes ToRight-fadeIn{
+  from{
+    left: -100%;
+    opacity: 0;
+  }
+  to{
+    left: 0%;
+    opacity: 1;
+  }
+}
+/*=============================== EXTRA ==================================*/
+
+/*PARA CENTAR CON POSITION ADSOLUTA O RELATIVA*/
+/*  <<<<< SE TIENE QUE PONER 50% EN LA POSICION QUE SE VA HA CENTRAR Y 0 EN LA QUE NO >>>>
+top: 50%; 
+left: 50%;
+transform: translate(50%,-50%); X, Y*/
+
+/*  PARA HACER EL EFECTO DE TRANSICION*/   
+/*  opacity: 1;                 <<<<< la opacidad esta en 0 para el elemento que se movera
+    transform: translate(0, 0); <<<<< se tiene que especificar cuantos pixels se movera el elemento
+    transition-duration: 2s;
+    transition-property: opacity, transform;
+    transition-delay: 1.5s;
+*/
+/*
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/

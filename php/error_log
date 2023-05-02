@@ -1,0 +1,32 @@
+[13-Feb-2023 18:05:15 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:14:04 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'rdpaul'@'localhost' (using password: YES) in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:17:37 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'rdpaul'@'localhost' (using password: YES) in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:29:00 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'rdpaul'@'localhost' (using password: YES) in /home/c260354/public_html/php/paginaBusqueda.php on line 28
+[13-Feb-2023 19:40:05 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifasElprogreso' in /home/c260354/public_html/php/paginaBusqueda.php on line 28
+[13-Feb-2023 19:40:49 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifasElprogreso' in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:41:00 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifasElprogreso' in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:50:02 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifaselprogreso' in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 19:50:14 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifaselprogreso' in /home/c260354/public_html/php/agregarDatos.php on line 15
+[13-Feb-2023 20:17:25 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifaselprogreso' in /home/c260354/public_html/php/paginaBusqueda.php on line 28
+[13-Feb-2023 20:18:59 Europe/Madrid] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'c260354_rdpaul'@'localhost' to database 'rifaselprogreso' in /home/c260354/public_html/php/session.php on line 27
+[17-Feb-2023 20:19:48 Europe/Madrid] PHP Notice:  Undefined index: dato in /home/c260354/public_html/php/agregarDatos.php on line 27
+[17-Feb-2023 20:19:48 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[17-Feb-2023 20:19:48 Europe/Madrid] PHP Notice:  Undefined variable: result in /home/c260354/public_html/php/agregarDatos.php on line 40
+[17-Feb-2023 20:32:49 Europe/Madrid] PHP Notice:  Undefined index: UserPerson in /home/c260354/public_html/php/session.php on line 35
+[17-Feb-2023 20:32:49 Europe/Madrid] PHP Notice:  Undefined index: UserPassWord in /home/c260354/public_html/php/session.php on line 36
+[26-Feb-2023 16:22:27 Europe/Madrid] PHP Notice:  Undefined index: dato in /home/c260354/public_html/php/agregarDatos.php on line 27
+[26-Feb-2023 16:22:27 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[26-Feb-2023 16:22:27 Europe/Madrid] PHP Notice:  Undefined variable: result in /home/c260354/public_html/php/agregarDatos.php on line 40
+[26-Feb-2023 16:23:17 Europe/Madrid] PHP Notice:  Undefined index: dato in /home/c260354/public_html/php/agregarDatos.php on line 27
+[26-Feb-2023 16:23:17 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[26-Feb-2023 16:23:17 Europe/Madrid] PHP Notice:  Undefined variable: result in /home/c260354/public_html/php/agregarDatos.php on line 40
+[26-Feb-2023 16:44:56 Europe/Madrid] PHP Notice:  Undefined index: dato in /home/c260354/public_html/php/agregarDatos.php on line 27
+[26-Feb-2023 16:44:56 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[26-Feb-2023 16:44:56 Europe/Madrid] PHP Notice:  Undefined variable: result in /home/c260354/public_html/php/agregarDatos.php on line 40
+[03-Mar-2023 20:43:32 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[03-Mar-2023 20:43:32 Europe/Madrid] PHP Notice:  Uninitialized string offset: 0 in /home/c260354/public_html/php/agregarDatos.php on line 37
+[03-Mar-2023 20:43:32 Europe/Madrid] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/c260354/public_html/php/agregarDatos.php on line 33
+[03-Mar-2023 21:35:55 Europe/Madrid] PHP Notice:  Undefined index: UserPerson in /home/c260354/public_html/php/session.php on line 35
+[03-Mar-2023 21:35:55 Europe/Madrid] PHP Notice:  Undefined index: UserPassWord in /home/c260354/public_html/php/session.php on line 36
+[03-Mar-2023 21:41:11 Europe/Madrid] PHP Notice:  Undefined index: UserPerson in /home/c260354/public_html/php/session.php on line 35
+[03-Mar-2023 21:41:11 Europe/Madrid] PHP Notice:  Undefined index: UserPassWord in /home/c260354/public_html/php/session.php on line 36

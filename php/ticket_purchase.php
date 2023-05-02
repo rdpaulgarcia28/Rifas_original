@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra De Boletos</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/bar.css">
+    <link rel="stylesheet" href="../css/ticket_purchase.css">
+    <link rel="stylesheet" href="../css/inputs.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="header__Home" src="../assents/png/Home.png" alt="">
+        </a>
+    </header>
+    <main>
+        <section class="selectNum">
+             <?php 
+            /*  
+                require("conexion.php");
+                $conexion = mysqli_connect($db_hostname,$db_user,$db_password,$db_name,$db_port);
+                if(mysqli_connect_errno()){
+                    echo "FALLO AL CONECTAR LA BASE DE DATOS";
+                    exit();
+                }
+                mysqli_select_db($conexion,$db_name) or die("NO SE ENCUENTRA LA BASE DE DATOS");
+                mysqli_set_charset($conexion,"utf8");
+                $query_info = "SELECT numero_boleto FROM informacion_clientes";
+                $query_result = mysqli_query($conexion,$query_info);
+                while($fila=mysqli_fetch_row($query_result)){
+                    echo " <div class='repeatNum'>$fila[0]</div> ";
+                }
+                mysqli_close($conexion);  
+            */
+            ?> 
+        </section>
+        <section class="numSuerte">
+            <form action="agregarDatos.php" method="get" class="numSuerteForm sombra">
+                <h2>Elige tu Numero De La Suerte</h2>
+                <div class="numSuerteFormBox">
+                    <div class="numSuerteFormBox__info">
+                        <input type="tel" class="input input--width2" name="phone" id="whatsapp" placeholder="Whatsapp"  onkeypress="return soloNumeros(event)" maxlength="10" minlength="10" required>
+                        <input type="text" class="input input--width2" name="name" id="nombre" placeholder="Nombre" required>
+                        <input type="text" class="input input--width2" name="lastName" id="apellido" placeholder="Apellido" required>
+                        <select id="cars" name="city" class="input input--width2" required>
+                            <option value="" selected></option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                          </select>
+                        <div class="insetarNumBox">
+                            <div class="insetarNumBox__div">
+                                <label class="textlabel--black">Inserta Tu Numero De La Suerte</label>
+                                <input type="text" name="" id="NumIngresado" class="input input--width input--marginBottom" onkeypress="return soloNumeros(event)" maxlength="5" placeholder="Inserta Tu Numero De La Suerte 0 al 100">
+                                <div class="insertarNumBox__boxInput">
+                                    <input type="button" id="Button_agregar" onclick="displayInputValue()" class="formBtn button--width button--width" value="Aceptar">
+                                </div>
+                                <label id="textLabel" class="textLabel--remove">"POR FAVOR INGRESA UN NUMERO MENOR A 100"</label>
+                                <label id=textLabel2 class="textLabel--remove">"ESTE NUMERO YA FUE ELEGIDO, POR FAVOR ELIGE OTRO"</label>
+                                <div id="numPadre3" class="numPadre selectNum"></div>
+                            </div>
+                        </div>
+                        <div class="creaNumBox">
+                            <div class="creaNumBox__div">
+                                <label for="">Maquina De La Suerte</label>
+                                <label for="">(crea tus numeros de forma alateoria)</label>
+                                <select name="" id="countInput" class="input input--marginBottom">
+                                    <option value=""></option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                <div class="creaNumBox__boxInput">
+                                    <input type="button" class="formBtn button--width button--width" id="generateBtn" value="Crear">
+                                </div>
+                                <div class="numPadre" id="numPadre2"></div>
+                            </div>
+                            <label class="textlabel--black" style="margin-top:20px;">Tambien Puedes Elejir Tus Numeros</label>
+                        </div>
+                    </div>
+                    <div class="numSuerteFormBox__creaNum">
+                        <section class="seccionBtns" id="seccionBtns"></section>
+                        <br>
+                        <label for="">Tus Numeros Elegidos Son:</label>
+                        <div id="numPadre" class="numPadre"></div>
+                        <br>
+                        <div class="deleted">
+                            <!-- <input type="button" class="formBtn" id="deleteBtn2" value="Borrar Ultimo Boleto"> -->
+                            <input type="button" class="formBtn" id="deleteBtn" value="Borrar Boleto">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="fhaterLabels">
+                    <label for="" class="textLabel--green">¡Al finalizar serás redirigido a whatsapp para enviar la información de tu boleto!</label>
+                    <label for="" class="textLabel--red">Tu boleto sólo dura 24 horas apartado</label>
+                    <br>
+                </div>
+                <input type="submit" class="formBtn enviar" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <script src="../js/creacionNum07.js"></script>
+    <script src="../js/solamenteNumeros.js"></script>
+    
+</body>
+</html>

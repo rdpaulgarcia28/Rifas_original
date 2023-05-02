@@ -1,0 +1,264 @@
+a {
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(144deg,#AF40FF,#AF40FF);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 60%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+a:active,
+a:hover {
+  outline: 0;
+  }
+  
+a span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+  
+a:hover span {
+  background: none;
+}
+  
+a:active {
+  transform: scale(0.9);
+}
+
+.card {
+  box-sizing: border-box;
+  width: 280px;
+  height: 250px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 17px;
+  text-align: center;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+.seccion{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+
+.hero{
+  width: inherit;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+}
+.hero--box{
+  width: 50%;
+  height: 100%;
+}
+.hero--img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  clip-path: circle(48% at 10% 50%);
+  background-image: url(../assents/imgs/smiling.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: none;
+}
+.hero--content{
+  width: 40%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero--titule{
+  text-align: center;
+  font-size: 35px;
+  color: #FFFFFF;
+}
+.hero--text{
+  font-size: 16px;
+  margin: 20px 0;
+  color: #FFFFFF;
+}
+.hero--btn{
+  margin-left: auto;
+}
+.hero--video{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 130%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.hero--layer{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #4b0085;
+  opacity: .7;
+  /*mix-blend-mode: overlay;*/
+  z-index: -1;
+}
+
+.questions{}
+.questions--titule{
+    font-size: 20px;
+}
+.questions--text{
+    font-size: 12px;
+    margin: 5px 15px;
+    font-weight: 200;
+}
+.contact{}
+.contact--img{}
+.contact--button{}
+.contact--img{
+    width: 130px;
+}
+
+.info_ticket{}
+.info_ticket--card{
+  justify-content: flex-start;
+  height: 500px;
+  overflow: hidden;
+}
+.info_ticket--img{
+  height: 50%;
+  border-radius: 17px 17px 0 0;
+}
+.info_ticket--content{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.info_ticket--titule{
+  font-size: 30px;
+}
+.info_ticket--text{
+  text-align: center;
+  font-size: 12px;
+  margin: 5px 15px;
+  font-weight: 200;
+  font-size: 20px;
+}
+.info_ticket--btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer--content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: #FFFFFF solid 2px;
+  width: 90%;
+}
+
+
+
+@media (min-width:1024px){
+  .seccion{
+    width: 90%;
+  }
+  .hero--titule{
+      font-size: 65px;
+  }
+  .info_ticket--card:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width:767px){
+  .info_ticket--card{
+    width: 100%;
+    flex-direction: row;
+  }
+  .info_ticket--img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 17px;
+  }
+  .info_ticket--content{
+    width: 50%;
+  }
+}
+@media (max-width:1400px){
+  .seccion{
+    justify-content: center;
+  }
+}
+@media (max-width:769px){
+  a{
+    max-width: 90%;
+  }
+  .hero--img{
+      background-position-x: -70px;
+  }
+  .hero--content{
+      width: 40%;
+  }
+}
+@media (max-width:425px){
+  .hero--box{
+      display: none;
+  }
+  .hero--content{
+      width: 300px;
+  }
+  .hero--btn{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .card{
+    width: 320px;
+  }
+}

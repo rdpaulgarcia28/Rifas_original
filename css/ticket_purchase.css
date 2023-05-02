@@ -1,0 +1,247 @@
+
+
+  /********************************************/
+  .selectNum{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1px;
+    opacity: 0;
+  }
+  .selectNum input{
+    margin: 0 3px;
+    opacity: 0;
+    font-size: 1px;
+  }
+  .disabled{
+    pointer-events: none;
+  }
+  .seccionBtns{
+    width: 90%;
+    height: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+  .btnOfNumber{
+    width: 50px;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+  }
+  .btnOfNumber:hover{
+    background-color: #4b0085;
+  }
+  .btnOfNumber:active{
+    transform: scale(.8);
+  }
+
+  /********************************************/
+
+  .numSuerte{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:100px;
+  }
+  .numSuerte h2{
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .numSuerteForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+  }
+  .numSuerteFormBox{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .numSuerteFormBox__info{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .numSuerteFormBox__creaNum{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .insertarNumBox__boxInput{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5px;
+  }
+  .input--width2{
+    width: 80% !important;
+  }
+  .insetarNumBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .insetarNumBox__div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .input--width{
+    width: 100% !important;
+  }
+  .input--marginBottom{
+    margin-bottom: 10px;
+  }
+
+
+  .creaNumBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+  }
+  .creaNumBox__div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .creaNumBox__div label{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .textlabel--black{
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .creaNumBox__boxInput{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+  }
+  .button--width{
+    width: 49%;
+  }
+  .creaNumBox__input{
+    margin: 10px;
+  }
+  .creaNumBox__div select{
+    width: 80%;
+  }
+  .numSuerteFormBox__info .input{
+    margin: 10px;
+  }
+  .numSuerte .formBtn{
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #4b0085;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.891);
+  }
+  .numSuerte .formBtn:hover{
+    background-color: #4b0085;
+  }
+  .enviar{
+    width: 60%;
+  }
+
+  .numPadre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+  .input_class{
+    margin: 2px;
+    width: 45px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    color: #4b0085;
+  }
+  .textLabel{
+    color: red;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .fhaterLabels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .textLabel--red{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  .textLabel--green{
+    color: green;
+    font-weight: 600;
+    text-align: center;
+  }
+  .textLabel--remove{
+    display: none;
+  }
+
+  .button--width{
+    width: 100%;
+  }
+  .header{
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+  }
+  .header__Home{
+    width: 70px;
+    height: 70px;
+    border: white solid 2px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  @media(max-width:768px){
+    .numSuerte .formBtn{
+      background-color: #4b0085;
+    }
+    .input{
+      border: 1.5px solid #4b0085 !important;
+    }
+  }
+  @media(max-width:768px){
+    .precioBox{
+      width: 100%;
+    }
+    .numSuerteForm {
+      width: 90%;
+    }
+    .precioBox_right {
+      width: 90%;
+    }
+    .precioBox_right__card{
+      width: 100%;
+    }
+    .numSuerteFormBox {
+      padding: 0px;
+  }
+}
