@@ -20,8 +20,7 @@
     </header>
     <main>
         <section class="selectNum">
-             <?php 
-            /*  
+             <?php  
                 require("conexion.php");
                 $conexion = mysqli_connect($db_hostname,$db_user,$db_password,$db_name,$db_port);
                 if(mysqli_connect_errno()){
@@ -36,7 +35,6 @@
                     echo " <div class='repeatNum'>$fila[0]</div> ";
                 }
                 mysqli_close($conexion);  
-            */
             ?> 
         </section>
         <section class="numSuerte">
